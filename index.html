@@ -143,9 +143,9 @@
 
 -->
 
-<!--==================================================================================
+<!--===================================================================================================================
    HTML HTML入门 高级文本排版
--->
+
 
 <!DOCTYPE html>
 <html>
@@ -221,6 +221,88 @@
     </h2>
     HTML 还支持将时间和日期标记为可供机器识别的格式的 <time> 元素。例如：<br>
     <time datetime="2018-6-25T22:51">2018年6月25日 22:51</time>
+
+  </body>
+</html>
+-->
+
+<!--===================================================================================================================
+  学习 Web 开发 HTML HTML入门 文件和网站结构
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>My page title</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <header>
+      <h1>网页名</h1> <!--具有全局属性-->
+    </header>
+
+    <nav>
+      导航栏
+      <ul>
+        <li>导航列表1</li>
+        <li>导航列表2</li>
+        <li>导航列表3</li>
+      </ul>
+
+      <form>    <!--表示了文档中的一个区域，这个区域包含有交互控制元件，用来向web服务器提交信息。-->
+        <input type="search" name="q" placeholder="Search query">
+        <input type="submit" value="输入完之后按这里提交">
+      </form>
+    </nav>
+
+    <main>
+      <article> <!--表示文档、页面、应用或网站中的独立结构，其意在成为可独立分配的或可复用的结构，如在发布中，它可能是论坛帖子、杂志或新闻文章、博客、用户提交的评论、交互式组件，或者其他独立的内容项目。当<article>元素嵌套使用时，则该元素代表与外层元素有关的文章-->
+        <h2>二级标题</h2>
+        <p>内容，花一些时间来查看代码并理解它 - 代码中的注释也应该帮助您理解它。 我们不要求你在这篇文章中做很多其他事情，因为理解文档布局的关键是编写一个完整的HTML结构，然后用CSS布局。等你学习到 CSS 部分的时候才能完全理解上面代码。</p>
+        <h3>三级标题</h3>
+        <p>内容，从总体详细的理解HTML的元素是不错的——随着你web开发经验的逐渐积累，你将会逐渐理解HTML的元素。你可以通过查阅HTML元素参考找到更多的细节。现在，你需要理解这些主要的元素定义</p>
+      </article>
+
+
+      <aside>
+        <h2>侧栏</h2>
+        <ul>
+          <li><a href="#">侧栏标题1</a></li>
+          <li><a href="#">侧栏标题2</a></li>
+          <li><a href="#">侧栏标题3</a></li>
+        </ul>
+      </aside>
+
+    </main>
+
+    <span class="元素属性">span是一个行内无语义元素</span> <!--class允许css和javascript通过class选择器或者类似下面的DOM方法来选择和访问element-->
+
+    <div class="div元素描述">
+      div是一个块级无语义元素，你应该仅仅当找不到更好的块级元素时使用，或者不想增加特定的意义。例如，想象当你浏览一个电子商务网站时，有一个购物车部件一直都在你可以选择的地方。
+    </div>
+
+    <br>
+    <br>
+    <br>
+    
+    在文档中生成一条水平分割线，表示文本中主题的变化（例如主题或场景的变化）。看起来就是一条水平线。像下面的例子
+    <hr>
+    就是水平分割线
+
+    <footer>
+      <p>来自中国深圳，法兰克，2018.6.26</p>
+    </footer>
+
+    
 
   </body>
 </html>
